@@ -1,81 +1,26 @@
-<prescriptions xmlns="http://greenify.github.io/schemas/prescription/v3" >
-  <!--Your Greenify's version must >=3.2.0-->
-  <prescription type="broadcast" package="com.tencent.mm">
-    <intent-filter>
-      <action name="com.tencent.mm.booter.ClickFlowReceiver" />
-      <action name="com.tencent.mm.booter.BluetoothStateReceiver" />
-      <action name="com.tencent.mm.sandbox.monitor.CrashUploadAlarmReceiver" />
-      <action name="com.tencent.mm.booter.MountReceiver" />
-      <action name="com.tencent.mm.booter.BluetoothReceiver" />
-      <action name="com.tencent.mm.plugin.backup.bakoldmodel.BakOldUSBReceiver" />
-      <action name="com.tencent.mm.plugin.base.stub.WXEntryActivity$EntryReceiver" />
-      <action name="com.tencent.mm.booter.InstallReceiver" />
-      <action name="com.tencent.mm.pluginsdk.model.downloader.FileDownloadReceiver" />
-      <action name="com.tencent.mm.plugin.report.service.KVCommCrossProcessReceiver" />
-      <action name="com.tencent.mm.plugin.exdevice.devicestep.StepAwakeAlarmReceiver" />
-      <action name="com.tencent.mm.plugin.appbrand.task.AppBrandTaskPreloadReceiver" />
-      <action name="com.tencent.mm.plugin.appbrand.task.AppBrandTaskPreloadReceiver1" />
-      <action name="com.tencent.mm.plugin.appbrand.task.AppBrandTaskPreloadReceiver2" />
-      <action name="com.tencent.mm.plugin.appbrand.task.AppBrandTaskPreloadReceiver3" />
-      <action name="com.tencent.mm.plugin.appbrand.task.AppBrandTaskPreloadReceiver4" />
-      <action name="com.tencent.mm.booter.MMReceivers$ToolsProcessReceiver" />
-      <action name="com.tencent.mm.booter.MMReceivers$SandBoxProcessReceiver" />
-      <action name="com.tencent.mm.booter.MMReceivers$ExdeviceProcessReceiver" />
-      <action name="com.tencent.mm.booter.MMReceivers$ConnectionReceiver" />
-      <action name="com.tencent.mm.booter.MMReceivers$AlarmReceiver" />
-    </intent-filter>
-  </prescription>
-  <prescription type="service" package="com.tencent.mm">
-    <intent-filter>
-      <action name="com.tencent.mm.modelrecovery.RecoveryTinkerResultService" >
-      <action name="com.tencent.mm.modelfriend.AddrBookObserver$AddrBookService" />
-      <action name="com.tencent.mm.plugin.backup.bakpcmodel.BakchatPcUsbService" />
-      <action name="com.tencent.mm.plugin.backup.oldmovemodel.MoveService" />
-      <action name="com.tencent.mm.plugin.backup.backuppcmodel.BackupPcService" />
-      <action name="com.tencent.mm.plugin.backup.bakoldmodel.BakOldUSBService" />
-      <action name="com.tencent.mm.plugin.exdevice.service.ExDeviceService" />
-      <action name="com.tencent.mm.sandbox.monitor.ExceptionMonitorService" />
-      <action name="com.tencent.mm.sandbox.updater.UpdaterService" />
-      <action name="com.tencent.mm.crash.CrashUploadService" />
-      <action name="com.tencent.mm.plugin.facedetect.service.FaceDetectProcessService" />
-      <action name="com.tencent.tinker.lib.service.TinkerPatchService" />
-      <action name="com.tencent.tinker.lib.service.TinkerPatchResultService" />
-      <action name="com.tencent.tinker.lib.service.TinkerPatchService$InnerService" />
-      <action name="com.tencent.recovery.service.RecoveryReportService" />
-      <action name="com.tencent.recovery.service.RecoveryHandleService$InnerService" />
-    </intent-filter>
-  </prescription>
-  <prescription type="activity" package="com.tencent.mm">
-    <intent-filter>
-      <!--wifi-->
-      <action name="com.tencent.mm.plugin.exdevice.ui.ExdeviceConnectWifiUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreewifiWeChatNoAuthStateUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreeWifiMIGNoAuthStateUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreeWifiAuthStateUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreeWifiIntroductionUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreeWifiEntryUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreeWifiNetCheckUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreeWifiManufacturerLoadingUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreeWifiNoWifiUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreeWifiFrontPageUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreeWifiCopyPwdUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreeWifiPcUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreeWifiErrorUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreeWifiActivateAuthStateUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreewifiActivateWeChatNoAuthStateUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreeWifiSuccUI" />
-      <!--Game-->
-      <action name="com.tencent.mm.plugin.webview.ui.tools.game.GameChattingRoomWebViewUI" />
-      <action name="com.tencent.mm.plugin.webview.ui.tools.game.GameWebViewUI" />
-      <action name="com.tencent.mm.plugin.webview.ui.tools.game.H5GameWebViewUI" />
-      <action name="com.tencent.mm.plugin.game.ui.GameCenterUI" />
-      <!--others-->
-      <action name="com.tencent.mm.ui.friend.InviteFacebookFriendsUI" />
-      <action name="com.tencent.mm.plugin.facedetect.ui.FaceInformationConfirmUI" />
-      <action name="com.tencent.mm.plugin.facedetect.ui.FaceDebugUI" />
-      <action name="com.tencent.mm.plugin.facedetect.ui.FaceDetectPrepareUI" />
-      <action name="com.tencent.mm.plugin.facedetect.ui.FaceDetectConfirmUI" />
-      <action name="com.tencent.mm.plugin.facedetect.ui.FaceDetectUI" />
-    </intent-filter>
-  </prescription>
-</prescriptions>
+<!--Your Greenify's version must >=3.2.0-->
+<prescription type="broadcast" package="com.tencent.mm">
+  <intent-filter>
+    <action name="com.tencent.mm.booter.ClickFlowReceiver" />
+    <action name="com.tencent.mm.booter.BluetoothStateReceiver" />
+    <action name="com.tencent.mm.sandbox.monitor.CrashUploadAlarmReceiver" />
+    <action name="com.tencent.mm.booter.MountReceiver" />
+    <action name="com.tencent.mm.booter.BluetoothReceiver" />
+    <action name="com.tencent.mm.plugin.backup.bakoldmodel.BakOldUSBReceiver" />
+    <action name="com.tencent.mm.plugin.base.stub.WXEntryActivity$EntryReceiver" />
+    <action name="com.tencent.mm.booter.InstallReceiver" />
+    <action name="com.tencent.mm.pluginsdk.model.downloader.FileDownloadReceiver" />
+    <action name="com.tencent.mm.plugin.report.service.KVCommCrossProcessReceiver" />
+    <action name="com.tencent.mm.plugin.exdevice.devicestep.StepAwakeAlarmReceiver" />
+    <action name="com.tencent.mm.plugin.appbrand.task.AppBrandTaskPreloadReceiver" />
+    <action name="com.tencent.mm.plugin.appbrand.task.AppBrandTaskPreloadReceiver1" />
+    <action name="com.tencent.mm.plugin.appbrand.task.AppBrandTaskPreloadReceiver2" />
+    <action name="com.tencent.mm.plugin.appbrand.task.AppBrandTaskPreloadReceiver3" />
+    <action name="com.tencent.mm.plugin.appbrand.task.AppBrandTaskPreloadReceiver4" />
+    <action name="com.tencent.mm.booter.MMReceivers$ToolsProcessReceiver" />
+    <action name="com.tencent.mm.booter.MMReceivers$SandBoxProcessReceiver" />
+    <action name="com.tencent.mm.booter.MMReceivers$ExdeviceProcessReceiver" />
+    <action name="com.tencent.mm.booter.MMReceivers$ConnectionReceiver" />
+    <action name="com.tencent.mm.booter.MMReceivers$AlarmReceiver" />
+  </intent-filter>
+</prescription>
