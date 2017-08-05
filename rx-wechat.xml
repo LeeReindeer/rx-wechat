@@ -1,5 +1,5 @@
 <!--Your Greenify's version must >=3.2.0-->
-<prescription type="broadcast" package="com.tencent.mm">
+<prescription xmlns="http://greenify.github.io/schemas/prescription/v2" type="broadcast" package="com.tencent.mm">
   <intent-filter>
     <action name="com.tencent.mm.booter.ClickFlowReceiver" />
     <action name="com.tencent.mm.booter.BluetoothStateReceiver" />
