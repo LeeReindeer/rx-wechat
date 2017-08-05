@@ -1,5 +1,4 @@
-<prescriptions xmlns="http://greenify.github.io/schemas/prescription/v2" >
-  <prescription type="broadcast">
+  <prescription xmlns="http://greenify.github.io/schemas/prescription/v2" type="broadcast">
     <intent-filter>
       <action name="com.tencent.mm.booter.ClickFlowReceiver" />
       <action name="com.tencent.mm.booter.BluetoothStateReceiver" />
@@ -24,24 +23,3 @@
       <action name="com.tencent.mm.booter.MMReceivers$AlarmReceiver" />
     </intent-filter>
   </prescription>
-  <prescription type="service" >
-    <intent-filter>
-      <action name="com.tencent.mm.modelrecovery.RecoveryTinkerResultService" >
-      <action name="com.tencent.mm.modelfriend.AddrBookObserver$AddrBookService" />
-      <action name="com.tencent.mm.plugin.backup.bakpcmodel.BakchatPcUsbService" />
-      <action name="com.tencent.mm.plugin.backup.oldmovemodel.MoveService" />
-      <action name="com.tencent.mm.plugin.backup.backuppcmodel.BackupPcService" />
-      <action name="com.tencent.mm.plugin.backup.bakoldmodel.BakOldUSBService" />
-      <action name="com.tencent.mm.plugin.exdevice.service.ExDeviceService" />
-      <action name="com.tencent.mm.sandbox.monitor.ExceptionMonitorService" />
-      <action name="com.tencent.mm.sandbox.updater.UpdaterService" />
-      <action name="com.tencent.mm.crash.CrashUploadService" />
-      <action name="com.tencent.mm.plugin.facedetect.service.FaceDetectProcessService" />
-      <action name="com.tencent.tinker.lib.service.TinkerPatchService" />
-      <action name="com.tencent.tinker.lib.service.TinkerPatchResultService" />
-      <action name="com.tencent.tinker.lib.service.TinkerPatchService$InnerService" />
-      <action name="com.tencent.recovery.service.RecoveryReportService" />
-      <action name="com.tencent.recovery.service.RecoveryHandleService$InnerService" />
-    </intent-filter>
-  </prescription>
-</prescriptions>
