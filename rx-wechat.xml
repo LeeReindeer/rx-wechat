@@ -1,6 +1,5 @@
 <prescriptions xmlns="http://greenify.github.io/schemas/prescription/v2" >
-  <!--Your Greenify's version must >=3.2.0-->
-  <prescription type="broadcast" package="com.tencent.mm">
+  <prescription type="broadcast">
     <intent-filter>
       <action name="com.tencent.mm.booter.ClickFlowReceiver" />
       <action name="com.tencent.mm.booter.BluetoothStateReceiver" />
@@ -25,7 +24,7 @@
       <action name="com.tencent.mm.booter.MMReceivers$AlarmReceiver" />
     </intent-filter>
   </prescription>
-  <prescription type="service" package="com.tencent.mm">
+  <prescription type="service" >
     <intent-filter>
       <action name="com.tencent.mm.modelrecovery.RecoveryTinkerResultService" >
       <action name="com.tencent.mm.modelfriend.AddrBookObserver$AddrBookService" />
@@ -43,39 +42,6 @@
       <action name="com.tencent.tinker.lib.service.TinkerPatchService$InnerService" />
       <action name="com.tencent.recovery.service.RecoveryReportService" />
       <action name="com.tencent.recovery.service.RecoveryHandleService$InnerService" />
-    </intent-filter>
-  </prescription>
-  <prescription type="activity">
-    <intent-filter>
-      <!--wifi-->
-      <action name="com.tencent.mm.plugin.exdevice.ui.ExdeviceConnectWifiUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreewifiWeChatNoAuthStateUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreeWifiMIGNoAuthStateUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreeWifiAuthStateUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreeWifiIntroductionUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreeWifiEntryUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreeWifiNetCheckUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreeWifiManufacturerLoadingUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreeWifiNoWifiUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreeWifiFrontPageUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreeWifiCopyPwdUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreeWifiPcUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreeWifiErrorUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreeWifiActivateAuthStateUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreewifiActivateWeChatNoAuthStateUI" />
-      <action name="com.tencent.mm.plugin.freewifi.ui.FreeWifiSuccUI" />
-      <!--Game-->
-      <action name="com.tencent.mm.plugin.webview.ui.tools.game.GameChattingRoomWebViewUI" />
-      <action name="com.tencent.mm.plugin.webview.ui.tools.game.GameWebViewUI" />
-      <action name="com.tencent.mm.plugin.webview.ui.tools.game.H5GameWebViewUI" />
-      <action name="com.tencent.mm.plugin.game.ui.GameCenterUI" />
-      <!--others-->
-      <action name="com.tencent.mm.ui.friend.InviteFacebookFriendsUI" />
-      <action name="com.tencent.mm.plugin.facedetect.ui.FaceInformationConfirmUI" />
-      <action name="com.tencent.mm.plugin.facedetect.ui.FaceDebugUI" />
-      <action name="com.tencent.mm.plugin.facedetect.ui.FaceDetectPrepareUI" />
-      <action name="com.tencent.mm.plugin.facedetect.ui.FaceDetectConfirmUI" />
-      <action name="com.tencent.mm.plugin.facedetect.ui.FaceDetectUI" />
     </intent-filter>
   </prescription>
 </prescriptions>
